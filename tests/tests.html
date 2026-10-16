@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gym Reservation Tests</title>
+  <title>Gym Reservation Automated Tests</title>
   <style>
     :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
     body { margin: 2rem auto; max-width: 960px; padding: 0 1rem 3rem; }
@@ -23,9 +23,15 @@
   </style>
   <script src="../js/data.js" defer></script>
   <script src="../js/reservation.js" defer></script>
+  <script src="../js/ui-helpers.js" defer></script>
+  <script src="../js/ui.js" defer></script>
   <script src="testkit.js" defer></script>
   <script src="data.test.js" defer></script>
   <script src="reservation.test.js" defer></script>
+  <script src="ui-helpers.js" defer></script>
+  <script src="ui.test.js" defer></script>
+  <script src="participants.test.js" defer></script>
+  <script src="confirm.test.js" defer></script>
   <script defer>
     window.addEventListener("DOMContentLoaded", function () {
       document.querySelector("#run-tests").addEventListener("click", window.TestKit.run);
@@ -35,8 +41,8 @@
 </head>
 <body>
   <main>
-    <h1>Gym Reservation: Phase 1 Tests</h1>
-    <p>Browser-only tests for catalog data and reservation rules.</p>
+    <h1>Gym Reservation Tests</h1>
+    <p>Browser-only tests for reservation rules and the booking flow.</p>
     <button id="run-tests" type="button">Run tests again</button>
     <p id="test-summary" class="summary" aria-live="polite">Tests are loading.</p>
     <table>
