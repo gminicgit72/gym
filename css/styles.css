@@ -113,6 +113,7 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--focus); out
 .participant-control label { font-size: .85rem; font-weight: 700; }
 .participant-control input { width: 120px; min-height: 44px; border: 1px solid var(--line); border-radius: 3px; padding: 8px 10px; color: var(--ink); background: var(--surface-raised); }
 .participant-control input:disabled { background: var(--canvas); }
+.participant-control input[aria-invalid="true"] { border-color: var(--coral); }
 .field-hint { margin: 0; color: var(--muted); font-size: .78rem; }
 .form-message { min-height: 1.5em; margin: 10px 0 0; color: var(--coral); font-size: .86rem; font-weight: 650; }
 

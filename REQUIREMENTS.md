@@ -57,8 +57,8 @@ Build a small browser-based application that lets a visitor anonymously reserve 
 
 ## 5. Verification
 
-- When `tests/tests.html` is present, open it in a browser and require every automated test row to pass. `phases.txt` reports 112 tests, but that count is not verified until the test files are present and run.
+- Open `tests/tests.html` in a browser and require every automated test row to pass. The current cumulative suite contains 112 tests and has passed in the browser; rerun it after changes.
 - Open `index.html` in a browser and complete a reservation. Verify the summary, total, confirmation, deducted availability, and ability to book again.
 - Verify incomplete, invalid, over-capacity, and full-session reservations cannot be confirmed.
-- Verify refresh restores initial availability, and review keyboard/screen-reader behavior, both themes, contrast, reduced motion, and the 390px layout using `TEST_PLAN.md` when available.
+- Verify refresh restores initial availability, and review keyboard/screen-reader behavior, both themes, contrast, reduced motion, and the 390px layout using `TEST_PLAN.md`. A real screen-reader session is a manual check and is not replaced by automated assertions.
 - Confirm the application makes no network requests and uses no persistent storage or personal data.

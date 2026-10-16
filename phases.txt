@@ -1,8 +1,8 @@
 GYM CLASS RESERVATION — PHASE DELIVERABLES AND STATUS
 
-CURRENT LOCAL STATUS: Phases 1 and 2 are implemented and all 99 cumulative
-browser tests pass. Phase 3 deliverables below are planned, not present or
-verified in this checkout. Later test totals are cumulative targets.
+CURRENT LOCAL STATUS: Phases 1-3 are implemented and all 112 cumulative
+browser tests pass. See TEST_PLAN.md for manual verification results and the
+remaining real screen-reader check.
 
 Requirements: REQUIREMENTS.md
 Run tests:    double-click tests\tests.html (all rows must be green)
@@ -61,7 +61,7 @@ through confirmation. Verify updated availability, price
 calculations, full-session restrictions and booking again.
 Open tests\tests.html → "All 99 tests passed".
 
-PHASE 3 — ACCESSIBILITY AND VERIFICATION (PLANNED; NOT IMPLEMENTED HERE)
+PHASE 3 — ACCESSIBILITY AND VERIFICATION (IMPLEMENTED; AUTOMATED TESTS PASS)
 
 Files:  js/ui.js, css/styles.css, tests/a11y.test.js,
 tests/ui-helpers.js, TEST_PLAN.md, tests/tests.html
@@ -75,14 +75,14 @@ and focus management after confirmation and reset.
 automated test inventory, manual checks and known limits.
 - Verify compliance with the BRD scope: no personal data,
 storage, network calls, backend or payment processing.
-Tests:  112 cumulative tests planned after Phase 3 (99 Phase 2 tests plus
-	13 Phase 3 tests); not run or verified in this checkout.
+Tests:  112 cumulative tests across all phases (99 Phase 1-2 tests plus
+	13 Phase 3 tests); all 112 pass in the browser test page.
 How to check:
 Follow TEST_PLAN.md for manual checks M1–M13.
 Open tests\tests.html → "All 112 tests passed".
 Confirm the app works on desktop and mobile and that a page
 refresh restores the initial availability.
 
-CURRENT CHECKOUT: Phases 1 and 2 are complete and verified with 99 passing
-tests. Phase 3 remains unimplemented; its 112-test total is a target until
-the Phase 3 work is delivered and its browser tests pass.
+CURRENT CHECKOUT: All three phases are implemented and all 112 automated
+tests pass. Manual checks are documented in TEST_PLAN.md; a real screen-reader
+session remains to be performed with assistive technology.
