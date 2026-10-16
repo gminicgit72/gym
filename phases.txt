@@ -1,9 +1,15 @@
-GYM CLASS RESERVATION — WORK DONE PER PHASE
+GYM CLASS RESERVATION — PHASE DELIVERABLES AND STATUS
+
+CURRENT LOCAL STATUS: Phase 1 is implemented and its 50 browser tests pass.
+Phase 2 and Phase 3 deliverables below are planned, not present or verified
+in this checkout. Test totals for later phases are cumulative targets.
 
 Requirements: REQUIREMENTS.md
 Run tests:    double-click tests\tests.html (all rows must be green)
 Run app:      double-click index.html (available from Phase 2)
 Tech:         plain HTML/CSS/JavaScript, no build, no installs (Node not available)
+
+PHASE 1 — CORE RESERVATION LOGIC (IMPLEMENTED AND VERIFIED)
 
 Files:  js/data.js, js/reservation.js, tests/testkit.js,
 tests/data.test.js, tests/reservation.test.js,
@@ -19,11 +25,14 @@ original state.
 - Reset availability to initial values whenever a fresh
 application state is created.
 - Build a lightweight in-browser automated test harness.
-Tests:  50 automated tests, all passing.
+Tests:  50 automated tests (Phase 1 cumulative total); all 50 pass in the
+	browser test page.
 How to check:
 Open tests\tests.html → "All 50 tests passed".
 Verify price calculations, invalid reservations, capacity
 limits, repeated bookings, full sessions and initial reset.
+
+PHASE 2 — USER INTERFACE (PLANNED; NOT IMPLEMENTED IN THIS CHECKOUT)
 
 Files:  index.html, css/styles.css, js/ui.js, js/app.js,
 tests/ui-helpers.js, tests/ui.test.js,
@@ -44,12 +53,15 @@ screen and the option to make another reservation.
 - Preserve updated availability between reservations while
 resetting it on page refresh.
 - Add responsive styling and light/dark theme support.
-Tests:  99 automated tests, all passing.
+Tests:  99 cumulative tests planned after Phase 2 (50 Phase 1 tests plus
+	49 Phase 2 tests); not run or verified in this checkout.
 How to check:
 Open index.html and complete a reservation from selection
 through confirmation. Verify updated availability, price
 calculations, full-session restrictions and booking again.
 Open tests\tests.html → "All 99 tests passed".
+
+PHASE 3 — ACCESSIBILITY AND VERIFICATION (PLANNED; NOT IMPLEMENTED HERE)
 
 Files:  js/ui.js, css/styles.css, tests/a11y.test.js,
 tests/ui-helpers.js, TEST_PLAN.md, tests/tests.html
@@ -63,11 +75,14 @@ and focus management after confirmation and reset.
 automated test inventory, manual checks and known limits.
 - Verify compliance with the BRD scope: no personal data,
 storage, network calls, backend or payment processing.
-Tests:  112 automated tests, all passing.
+Tests:  112 cumulative tests planned after Phase 3 (99 Phase 2 tests plus
+	13 Phase 3 tests); not run or verified in this checkout.
 How to check:
 Follow TEST_PLAN.md for manual checks M1–M13.
 Open tests\tests.html → "All 112 tests passed".
 Confirm the app works on desktop and mobile and that a page
 refresh restores the initial availability.
 
-ALL PHASES COMPLETE — 112 automated tests passing.
+CURRENT CHECKOUT: Phase 1 complete and verified; Phases 2 and 3 remain
+unimplemented. The 99- and 112-test totals are targets until those phases
+are delivered and their browser tests pass.

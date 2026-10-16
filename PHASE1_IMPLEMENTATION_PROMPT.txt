@@ -1,0 +1,23 @@
+Implement Phase 1 only for the Gym Class Reservation project.
+
+Authoritative sources:
+- BRD.md defines business behavior and out-of-scope features.
+- REQUIREMENTS.md translates the BRD into testable requirements.
+- AGENTS.md defines implementation constraints.
+
+Scope:
+- Add js/data.js with the four classes, prices, twelve sessions, initial availability, and fresh application-state creation.
+- Add js/reservation.js with availability lookups, full-session detection, price calculation, validation, and immutable confirmation.
+- Add a no-dependency browser test harness in tests/testkit.js, tests/data.test.js, tests/reservation.test.js, and tests/tests.html.
+- Add 50 focused Phase 1 automated tests, runnable by opening tests/tests.html directly in a browser.
+- Update phases.txt to describe cumulative test totals, clarify that bookings are anonymous in-memory records, and distinguish verified current work from later phases.
+
+Constraints:
+- Use plain HTML and JavaScript. Do not require Node.js, a build step, package installation, frameworks, server-side code, network requests, or browser storage.
+- Confirmation returns a new state, deducts session availability, and adds an in-memory booking record without mutating the prior state.
+- Collect no personal information. Do not implement the UI, CSS, or later phases as part of Phase 1.
+- Keep all edits local. Do not commit or push to GitHub.
+
+Verification:
+- Open tests/tests.html directly in a browser and require all 50 tests to pass before marking Phase 1 verified in phases.txt.
+- Cover catalog values, initial and reset availability, pricing, invalid requests, participant limits, full sessions, immutable state, repeated bookings, and booking record contents.

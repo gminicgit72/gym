@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gym Reservation Tests</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+    body { margin: 2rem auto; max-width: 960px; padding: 0 1rem 3rem; }
+    h1 { font-size: 1.7rem; }
+    .summary { font-weight: 700; padding: .8rem 1rem; border-left: 4px solid; }
+    .summary.passed { color: #176b39; background: #e8f6ed; border-color: #23834a; }
+    .summary.failed { color: #8f1d1d; background: #fff0ef; border-color: #b3261e; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border-bottom: 1px solid #8886; padding: .55rem; text-align: left; vertical-align: top; }
+    .passed td:first-child { color: #176b39; font-weight: 700; }
+    .failed td:first-child { color: #b3261e; font-weight: 700; }
+    button { font: inherit; padding: .5rem .8rem; }
+    @media (prefers-color-scheme: dark) {
+      .summary.passed { color: #9ae6b4; background: #173c27; }
+      .summary.failed { color: #ffb4ab; background: #4a1c1b; }
+    }
+  </style>
+  <script src="../js/data.js" defer></script>
+  <script src="../js/reservation.js" defer></script>
+  <script src="testkit.js" defer></script>
+  <script src="data.test.js" defer></script>
+  <script src="reservation.test.js" defer></script>
+  <script defer>
+    window.addEventListener("DOMContentLoaded", function () {
+      document.querySelector("#run-tests").addEventListener("click", window.TestKit.run);
+      window.TestKit.run();
+    });
+  </script>
+</head>
+<body>
+  <main>
+    <h1>Gym Reservation: Phase 1 Tests</h1>
+    <p>Browser-only tests for catalog data and reservation rules.</p>
+    <button id="run-tests" type="button">Run tests again</button>
+    <p id="test-summary" class="summary" aria-live="polite">Tests are loading.</p>
+    <table>
+      <thead><tr><th scope="col">Result</th><th scope="col">Test</th><th scope="col">Details</th></tr></thead>
+      <tbody id="test-results"></tbody>
+    </table>
+  </main>
+</body>
+</html>
